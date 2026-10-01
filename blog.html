@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wajiha Rao Blog | Digital Marketing & Creative Insights</title>
+  <meta name="description" content="Welcome to Wajiha Rao's blog, sharing practical insights, learning experiences and ideas about digital marketing, website design, AI content creation, advertising and the evolving digital world.">
+  <meta name="keywords" content="Wajiha Rao Blog, Digital Marketing Insights, Web Design Tips, AI Content Creation, Meta Ads Dubai, Canva Design, E-commerce">
+  <meta name="author" content="Wajiha Rao">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="blog">
+  <meta property="og:title" content="Wajiha Rao Blog | Digital Marketing & Creative Insights">
+  <meta property="og:description" content="Practical insights about digital marketing, website design, AI content creation, and modern tools.">
+  <meta property="og:image" content="assets/profile-portrait.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/profile-portrait.png">
+
+  <!-- Google Fonts: Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- STICKY NAVIGATION BAR -->
+  <header class="header-sticky" id="mainHeader">
+    <div class="container navbar">
+      <a href="index.html#home" class="brand-logo" aria-label="Wajiha Rao Homepage">
+        <img src="assets/profile-portrait.png" alt="Wajiha Rao" class="brand-logo-img">
+        <div class="brand-name">
+          WAJIHA <span>RAO</span><span class="gold-dot"></span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="nav-menu" aria-label="Main Navigation">
+        <a href="index.html#home" class="nav-link">Home</a>
+        <a href="index.html#about" class="nav-link">About</a>
+        <a href="index.html#skills" class="nav-link">Skills</a>
+        <a href="index.html#services" class="nav-link">Services</a>
+        <a href="index.html#portfolio" class="nav-link">Portfolio</a>
+        <a href="index.html#case-studies" class="nav-link">Case Studies</a>
+        <a href="blog.html" class="nav-link active">Blog</a>
+        <a href="index.html#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Nav Action -->
+      <div class="nav-actions">
+        <a href="index.html#contact" class="btn btn-primary btn-sm">Let's Work Together</a>
+        <button class="hamburger-btn" id="hamburgerBtn" aria-label="Open Mobile Menu" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-nav-drawer" id="mobileNavDrawer">
+      <div class="mobile-nav-links">
+        <a href="index.html#home" class="nav-link">Home</a>
+        <a href="index.html#about" class="nav-link">About</a>
+        <a href="index.html#skills" class="nav-link">Skills</a>
+        <a href="index.html#services" class="nav-link">Services</a>
+        <a href="index.html#portfolio" class="nav-link">Portfolio</a>
+        <a href="index.html#case-studies" class="nav-link">Case Studies</a>
+        <a href="blog.html" class="nav-link active">Blog</a>
+        <a href="index.html#contact" class="nav-link">Contact</a>
+      </div>
+      <a href="index.html#contact" class="btn btn-primary" style="width: 100%;">Let's Work Together</a>
+    </div>
+  </header>
+
+  <!-- BLOG HERO HEADER -->
+  <section style="background: linear-gradient(135deg, #0B1220 0%, #152238 100%); color: #fff; padding: 80px 0 60px;">
+    <div class="container text-center">
+      <span class="section-tag" style="background: rgba(37, 99, 235, 0.2); color: var(--color-soft-blue);">Professional Blog</span>
+      <h1 style="color: #fff; font-size: clamp(2.2rem, 4.5vw, 3.2rem); margin-bottom: 16px;">
+        Digital Marketing & Creative Insights
+      </h1>
+      <p style="color: rgba(255,255,255,0.8); max-width: 760px; margin: 0 auto; font-size: 1.1rem; line-height: 1.7;">
+        "Welcome to my blog, where I share practical insights, learning experiences and ideas about digital marketing, website design, AI content creation, advertising and the evolving digital world."
+      </p>
+      <div class="gold-line" style="margin: 20px auto 0;"></div>
+    </div>
+  </section>
+
+  <!-- MAIN BLOG SECTION -->
+  <section class="section-py blog-section">
+    <div class="container">
+      <!-- CMS Toolbar -->
+      <div class="cms-toolbar">
+        <div class="cms-toolbar-info">
+          <span class="gold-dot"></span>
+          <span><strong>Blog CMS:</strong> Live interactive management for adding future articles, tags, and SEO metadata.</span>
+        </div>
+        <button class="btn btn-primary btn-sm" id="openCmsBtn">
+          + Publish New Article
+        </button>
+      </div>
+
+      <!-- Blog Layout: Grid + Sidebar -->
+      <div class="blog-layout">
+        <!-- Articles Feed -->
+        <div>
+          <div class="blog-grid" id="blogGridContainer">
+            <!-- Dynamically populated -->
+          </div>
+        </div>
+
+        <!-- Sidebar -->
+        <aside class="blog-sidebar">
+          <div class="sidebar-widget">
+            <h4 class="widget-title">Search Articles</h4>
+            <div class="search-box">
+              <input type="text" class="search-input" id="blogSearchInput" placeholder="Search by title, topic..." aria-label="Search blog articles">
+              <span class="search-icon">🔍</span>
+            </div>
+          </div>
+
+          <div class="sidebar-widget">
+            <h4 class="widget-title">Categories</h4>
+            <div class="category-list" id="sidebarCategoryList">
+              <!-- Dynamically populated -->
+            </div>
+          </div>
+
+          <div class="sidebar-widget">
+            <h4 class="widget-title">Latest Articles</h4>
+            <div id="sidebarLatestArticles">
+              <!-- Dynamically populated -->
+            </div>
+          </div>
+
+          <div class="sidebar-widget">
+            <h4 class="widget-title">Popular Topics</h4>
+            <div class="tag-cloud">
+              <span class="tag-pill" onclick="filterBlogByCategory('Digital Marketing')">Digital Marketing</span>
+              <span class="tag-pill" onclick="filterBlogByCategory('Web Design')">Web Design</span>
+              <span class="tag-pill" onclick="filterBlogByCategory('AI & Content')">AI Tools</span>
+              <span class="tag-pill" onclick="filterBlogByCategory('Personal Learning')">Learning</span>
+              <span class="tag-pill" onclick="filterBlogByCategory('E-commerce')">Shopify</span>
+            </div>
+          </div>
+
+          <div class="sidebar-widget sidebar-cta-widget">
+            <h4>Let's Connect</h4>
+            <p>Looking to elevate your brand presence with data-driven strategy and modern design?</p>
+            <a href="index.html#contact" class="btn btn-white btn-sm" style="width: 100%;">Get in Touch</a>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section class="section-py newsletter-section">
+    <div class="container">
+      <div class="newsletter-box">
+        <span class="section-tag" style="background: rgba(255,255,255,0.1); color: var(--color-soft-blue);">Stay Informed</span>
+        <h2>Stay Updated</h2>
+        <p>"Get practical insights about digital marketing, websites, AI content and creative digital tools."</p>
+        
+        <form class="newsletter-form" id="newsletterForm">
+          <input type="text" class="newsletter-input" id="newsletterName" placeholder="Your Name" required aria-label="Your Name">
+          <input type="email" class="newsletter-input" id="newsletterEmail" placeholder="Your Email Address" required aria-label="Your Email Address">
+          <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="brand-name">WAJIHA <span style="color: var(--color-royal-blue);">RAO</span><span class="gold-dot"></span></div>
+          <div class="footer-tagline">Digital Marketing • Web Design • AI Content</div>
+          <p class="footer-bio">
+            Creative Web Designer & Digital Marketer combining data-driven marketing strategy, responsive web architectures, and AI content creation.
+          </p>
+          <a href="assets/Wajeeha_Rao_CV.pdf" download="Wajeeha_Rao_CV.pdf" class="btn btn-outline-white btn-sm" title="Download Verified Resume">
+            <span class="gold-icon">📥</span> Download My CV
+          </a>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#skills">Skills</a></li>
+            <li><a href="index.html#services">Services</a></li>
+            <li><a href="index.html#portfolio">Portfolio</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Direct Contact</h4>
+          <ul class="footer-links">
+            <li><a href="mailto:wajeeharao59@gmail.com">wajeeharao59@gmail.com</a></li>
+            <li><a href="tel:03327418644">03327418644</a></li>
+            <li><span>Bahawalpur Bypass, Multan, Pakistan</span></li>
+            <li><a href="index.html#contact">Send a Message</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 Wajiha Rao. All Rights Reserved.</div>
+        <div style="font-size: 0.8rem; color: rgba(255,255,255,0.4);">
+          Multan, Pakistan • wajeeharao59@gmail.com
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ARTICLE MODAL -->
+  <div class="article-modal" id="articleModal" role="dialog" aria-modal="true" aria-label="Article Details">
+    <div class="article-container" id="articleModalContent">
+      <!-- Injected dynamically -->
+    </div>
+  </div>
+
+  <!-- CMS MODAL -->
+  <div class="cms-modal" id="cmsModal" role="dialog" aria-modal="true" aria-label="Publish New Article">
+    <div class="cms-container">
+      <div style="display: flex; justify-content: space-between; align-items: center;" class="cms-header">
+        <div>
+          <h3 style="color: var(--color-deep-navy);">Blog Content Management System</h3>
+          <p style="font-size: 0.88rem; color: var(--color-muted-text);">Publish a new article to appear instantly on your live portfolio blog.</p>
+        </div>
+        <button class="article-close-btn" id="closeCmsBtn" style="position: static; background: #64748B;" title="Close CMS">✕</button>
+      </div>
+
+      <form id="cmsForm">
+        <div class="form-group">
+          <label for="cmsTitle">Article Title *</label>
+          <input type="text" class="form-control" id="cmsTitle" placeholder="e.g. Modern Strategies for Social Growth" required>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+          <div class="form-group">
+            <label for="cmsCategory">Category *</label>
+            <select class="form-control" id="cmsCategory" required>
+              <option value="Digital Marketing">Digital Marketing</option>
+              <option value="Web Design">Web Design</option>
+              <option value="Google Ads">Google Ads</option>
+              <option value="Meta Ads">Meta Ads</option>
+              <option value="AI & Content">AI & Content</option>
+              <option value="E-commerce">E-commerce</option>
+              <option value="Personal Learning">Personal Learning</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="cmsReadTime">Estimated Reading Time</label>
+            <input type="text" class="form-control" id="cmsReadTime" placeholder="e.g. 4 min read" value="4 min read">
+          </div>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+          <div class="form-group">
+            <label for="cmsAuthor">Author Name</label>
+            <input type="text" class="form-control" id="cmsAuthor" value="Wajiha Rao" required>
+          </div>
+
+          <div class="form-group">
+            <label for="cmsImage">Featured Image URL / Path</label>
+            <input type="text" class="form-control" id="cmsImage" value="assets/portfolio/gold-and-black-corporate-digital-marketing-agency-instagram-post.png" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="cmsExcerpt">Short Excerpt *</label>
+          <textarea class="form-control" id="cmsExcerpt" rows="2" placeholder="A compelling 1-2 sentence preview for the blog card..." required></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="cmsContent">Full Article Body Content *</label>
+          <textarea class="form-control" id="cmsContent" rows="6" placeholder="Write paragraphs separated by double enters..." required></textarea>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+          <div class="form-group">
+            <label for="cmsSeoTitle">SEO Title Tag</label>
+            <input type="text" class="form-control" id="cmsSeoTitle" placeholder="Custom SEO Page Title">
+          </div>
+
+          <div class="form-group">
+            <label for="cmsMetaDesc">SEO Meta Description</label>
+            <input type="text" class="form-control" id="cmsMetaDesc" placeholder="Meta description for search engines">
+          </div>
+        </div>
+
+        <div style="display: flex; justify-content: flex-end; gap: 12px; margin-top: 24px;">
+          <button type="button" class="btn btn-secondary" onclick="document.getElementById('cmsModal').classList.remove('active')">Cancel</button>
+          <button type="submit" class="btn btn-primary">Publish to Blog</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/blog-data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
